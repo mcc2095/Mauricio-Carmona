@@ -1,0 +1,339 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+@font-face {
+    font-family: "PoetsenOne-Regular";
+    src: url(../assets/fonts/PoetsenOne-Regular.ttf);
+}
+
+
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color: rgb(226, 223, 223);
+    font-family: "PoetsenOne-Regular";
+}
+
+.logo{
+    max-width: 5rem
+}
+
+.nav-list{
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-list a{
+    text-decoration: none;
+    color: black;
+}
+
+.abrir-menu{
+    display: none;
+}
+
+.title1{
+    display: flex;
+    font-family: "PoetsenOne-Regular";
+    font-size: 50px;
+    justify-content: center;
+    padding: 2rem;
+
+
+}
+
+.inicio{
+    background-image: url(../assets/images/background1.jpg);
+}
+
+.inicio1{
+    display: flex;
+}
+
+.img1 {
+    width: 20rem;
+    height: 20rem;
+    padding: 2rem;
+    align-items: center;
+}
+
+.texto1{
+    width: auto;
+    height: auto;
+    padding: 2rem;
+    text-align: justify;
+}
+
+.inicio2{
+    display: flex;
+}
+
+.texto2{
+    width: auto;
+    height: auto;
+    padding: 2rem;
+    text-align: justify;
+}
+
+.img2{
+    width: 20rem;
+    height: 20rem;
+    padding: 2rem;
+    align-items: center;
+}
+
+.inicio3{
+    display: flex;
+}
+
+.img3{
+    width: 20rem;
+    height: 20rem;
+    padding: 2rem;
+    align-items: center;
+}
+
+.texto3{
+    width: auto;
+    height: auto;
+    padding: 2rem;
+    text-align: justify;
+}
+
+.footer-index{
+    padding: 2rem;
+    text-align: center;
+}
+
+
+.redes-sociales i{
+    font-size: 2rem;
+    text-decoration: none;
+    color: black;
+
+}
+
+.title2{
+    display: flex;
+    font-family: "PoetsenOne-Regular";
+    font-size: 50px;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.proyectos{
+    background-image: url(../assets/images/background2.jpg);
+}
+.upload{
+    padding: 3rem;
+    text-align: center;
+}
+
+.search{
+    padding: 3rem;
+    text-align: center;
+}
+
+.download{
+    padding: 3rem;
+    text-align: center;
+}
+
+.title3{
+    display: flex;
+    font-family: "PoetsenOne-Regular";
+    font-size: 50px;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.pac{
+    background-image: url(../assets/images/background3.jpg);
+    background-size: cover;
+}
+
+.cursos{
+    padding: 2rem;
+    text-align: center;
+    width: auto;
+}
+
+.busqueda{
+    padding: 1rem;
+}
+
+.barra{
+    padding: 1rem;
+}
+
+.boton-buscar{
+    padding: 1rem;
+}
+
+.grid-container{
+    display: grid;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 2rem;
+}
+.grid-container tabla{
+    display: grid;
+    grid-template-columns: repeat(8, 2fr);
+    font-size: 20px;
+    font-style: oblique;
+    width: auto;
+    
+        
+}
+.th, td{
+    border: 1px solid black;
+    padding: 10px;
+    text-align: left;
+}
+
+.footer-pac{
+    padding: 2rem;
+    text-align: center;
+}
+
+.directivas{
+    background-image: url(../assets/images/background1.jpg);
+}
+.title4{
+    display: flex;
+    font-family: "PoetsenOne-Regular";
+    font-size: 50px;
+    justify-content: center;
+    padding: 2rem;
+}
+    
+.text-dir{
+    width: auto;
+    height: auto;
+    padding: 2rem;
+    text-align: justify;
+}
+.archivos{
+    display: flex;
+    padding: 3rem;
+    margin-top: 5rem;
+    text-align: center;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+.archivo1{
+    padding: 3rem;
+    
+}
+
+.archivo2{
+    padding: 3rem;
+}
+
+.archivo3{
+    padding: 3rem;
+}
+
+.contacto{
+    background-color: gray;
+    
+}
+
+.title5{
+    display: flex;
+    font-family: "PoetsenOne-Regular";
+    font-size: 50px;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.info-contacto{
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+.phones{
+    padding: 2rem;
+}
+.tel1{
+    padding: 1rem;
+    
+}
+.tel2{
+    padding: 1rem;
+}
+
+.mails{
+    padding: 2rem;
+    
+}
+.mail1{
+    padding: 1rem;
+}
+.mail2{
+    padding: 1rem;
+}
+
+.maps{
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.coments{
+    padding: 2rem;
+    text-align: center;
+    
+}
+
+.button{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.footer-contact{
+    padding: 2rem;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .abrir-menu{
+        display: block;
+        font-size: 2rem;
+        background-color: rgb(224, 162, 90);
+    }
+    .nav {
+        display: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgb(224, 162, 90);
+        padding: 2rem;
+        box-shadow: rgb(224, 162, 90);
+    }
+    header{
+        background-color: brown;
+    }
+    .inicio1{
+        display: block;
+    }
+    .inicio2{
+        display: block;
+       
+    }
+    .inicio3{
+        display: block;
+    }
+    
+}
