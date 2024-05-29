@@ -1,0 +1,19 @@
+@import "./utilities/restart";
+@import "./utilities/fonts";
+@import "./utilities/mixin";
+
+@import "./generals/header/navbar";
+@import "./generals/titles/titles";
+@import "./generals/footer/footer-index";
+@import "./generals/footer/footer-proyectos";
+@import "./generals/footer/footer-pac";
+@import "./generals/footer/footer-directivas";
+@import "./generals/footer/footer-contacto";
+
+@import "./pages/index";
+@import "./pages/proyectos";
+@import "./pages/pac";
+@import "./pages/directivas";
+@import "./pages/contacto";
+
+@import "./utilities/media-querie"

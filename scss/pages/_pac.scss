@@ -1,0 +1,38 @@
+.cursos{
+    padding: 2rem;
+    text-align: center;
+    width: auto;
+}
+
+.busqueda{
+    padding: 1rem;
+}
+
+.barra{
+    padding: 1rem;
+}
+
+.boton-buscar{
+    padding: 1rem;
+}
+
+.grid-container{
+    display: grid;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 2rem;
+}
+.grid-container tabla{
+    display: grid;
+    grid-template-columns: repeat(8, 2fr);
+    font-size: 20px;
+    font-style: oblique;
+    width: auto;
+    
+        
+}
+.th, td{
+    border: 1px solid black;
+    padding: 10px;
+    text-align: left;
+}

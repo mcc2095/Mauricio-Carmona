@@ -1,0 +1,45 @@
+.inicio1{
+    display: flex;
+}
+
+.img1 {
+    @include img-index;
+}
+
+.texto1{
+    width: auto;
+    height: auto;
+    padding: 2rem;
+    text-align: justify;
+}
+
+.inicio2{
+    display: flex;
+}
+
+.texto2{
+    width: auto;
+    height: auto;
+    padding: 2rem;
+    text-align: justify;
+}
+
+.img2{
+    @include img-index;
+    
+}
+
+.inicio3{
+    display: flex;
+}
+
+.img3{
+    @include img-index;
+}
+
+.texto3{
+    width: auto;
+    height: auto;
+    padding: 2rem;
+    text-align: justify;
+}
