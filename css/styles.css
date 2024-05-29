@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+
+@font-face {
+  font-family: "PoetsenOne-Regular";
+  src: url(assets\f ontsPoetsenOne-Regular.ttf);
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+  background-color: rgb(226, 223, 223);
+  font-family: "PoetsenOne-Regular";
+}
+
+.logo {
+  max-width: 5rem;
+}
+
+.nav-list {
+  list-style-type: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: black;
+}
+
+.abrir-menu {
+  display: none;
+}
+
+.title1 {
+  display: flex;
+  font-family: "PoetsenOne-Regular";
+  font-size: 50px;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.title2 {
+  display: flex;
+  font-family: "PoetsenOne-Regular";
+  font-size: 50px;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.title3 {
+  display: flex;
+  font-family: "PoetsenOne-Regular";
+  font-size: 50px;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.title4 {
+  display: flex;
+  font-family: "PoetsenOne-Regular";
+  font-size: 50px;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.title5 {
+  display: flex;
+  font-family: "PoetsenOne-Regular";
+  font-size: 50px;
+  justify-content: center;
+  padding: 2rem;
+}
+
+/*# sourceMappingURL=styles.css.map */
