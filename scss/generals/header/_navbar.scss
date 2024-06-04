@@ -1,27 +1,35 @@
-header{
+.navbar{
     display: flex;
-    align-items: center;
-    justify-content: space-between;
     padding: 2rem;
-    background-color: rgb(226, 223, 223);
-    font-family: "PoetsenOne-Regular";
+    background: linear-gradient(to right, #797985, #111111);
+    box-sizing: 20px;
 }
 
 .logo{
     max-width: 5rem
 }
 
-.nav-list{
-    list-style-type: none;
+.navbar-nav{
     display: flex;
+    padding: 1rem;
+    list-style-type: none;
+    text-transform: uppercase;
     gap: 1rem;
+    overflow: hidden;
 }
 
-.nav-list a{
+.navbar-nav a{
     text-decoration: none;
-    color: black;
+    color: rgb(219, 228, 222);
+    
+    
 }
 
-.abrir-menu{
-    display: none;
+.navbar-nav li:hover{
+    transform: translateY(-10px);
+    background-color: rgb(236, 81, 9);
+    border-radius: 5px 5px;
+    
 }
+
+

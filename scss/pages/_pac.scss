@@ -1,38 +1,28 @@
-.cursos{
+.cursos {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column;
     padding: 2rem;
-    text-align: center;
-    width: auto;
+    min-height: 25vh;
 }
 
-.busqueda{
+.busqueda, .barra, .boton-buscar {
     padding: 1rem;
+    
 }
 
-.barra{
-    padding: 1rem;
-}
-
-.boton-buscar{
-    padding: 1rem;
+.boton-buscar {
+    display: block;
 }
 
 .grid-container{
     display: grid;
     justify-content: center;
+    text-align: center;
     margin: 0 auto;
     padding: 2rem;
-}
-.grid-container tabla{
-    display: grid;
-    grid-template-columns: repeat(8, 2fr);
-    font-size: 20px;
-    font-style: oblique;
-    width: auto;
     
-        
 }
-.th, td{
-    border: 1px solid black;
-    padding: 10px;
-    text-align: left;
-}
+
+

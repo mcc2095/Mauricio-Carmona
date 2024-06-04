@@ -4,6 +4,8 @@
     font-size: 50px;
     justify-content: center;
     padding: 2rem;
+    animation: saltar .3s infinite;
+    transform: translateY(0);
 }
 
 @mixin img-index{

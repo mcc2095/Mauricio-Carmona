@@ -8,32 +8,43 @@
   font-family: "PoetsenOne-Regular";
   src: url(assets\f ontsPoetsenOne-Regular.ttf);
 }
-header {
+@keyframes saltar {
+  from {
+    transform: translate(0);
+  }
+  to {
+    transform: translateY(-5px);
+  }
+}
+.navbar {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
   padding: 2rem;
-  background-color: rgb(226, 223, 223);
-  font-family: "PoetsenOne-Regular";
+  background: linear-gradient(to right, #797985, #111111);
+  box-sizing: 20px;
 }
 
 .logo {
   max-width: 5rem;
 }
 
-.nav-list {
-  list-style-type: none;
+.navbar-nav {
   display: flex;
+  padding: 1rem;
+  list-style-type: none;
+  text-transform: uppercase;
   gap: 1rem;
+  overflow: hidden;
 }
 
-.nav-list a {
+.navbar-nav a {
   text-decoration: none;
-  color: black;
+  color: rgb(219, 228, 222);
 }
 
-.abrir-menu {
-  display: none;
+.navbar-nav li:hover {
+  transform: translateY(-10px);
+  background-color: rgb(236, 81, 9);
+  border-radius: 5px 5px;
 }
 
 .title1 {
@@ -42,6 +53,8 @@ header {
   font-size: 50px;
   justify-content: center;
   padding: 2rem;
+  animation: saltar 0.3s infinite;
+  transform: translateY(0);
 }
 
 .title2 {
@@ -50,6 +63,8 @@ header {
   font-size: 50px;
   justify-content: center;
   padding: 2rem;
+  animation: saltar 0.3s infinite;
+  transform: translateY(0);
 }
 
 .title3 {
@@ -58,6 +73,8 @@ header {
   font-size: 50px;
   justify-content: center;
   padding: 2rem;
+  animation: saltar 0.3s infinite;
+  transform: translateY(0);
 }
 
 .title4 {
@@ -66,6 +83,8 @@ header {
   font-size: 50px;
   justify-content: center;
   padding: 2rem;
+  animation: saltar 0.3s infinite;
+  transform: translateY(0);
 }
 
 .title5 {
@@ -74,6 +93,8 @@ header {
   font-size: 50px;
   justify-content: center;
   padding: 2rem;
+  animation: saltar 0.3s infinite;
+  transform: translateY(0);
 }
 
 .footer-index {
@@ -167,42 +188,28 @@ header {
 }
 
 .cursos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   padding: 2rem;
-  text-align: center;
-  width: auto;
+  min-height: 25vh;
 }
 
-.busqueda {
-  padding: 1rem;
-}
-
-.barra {
+.busqueda, .barra, .boton-buscar {
   padding: 1rem;
 }
 
 .boton-buscar {
-  padding: 1rem;
+  display: block;
 }
 
 .grid-container {
   display: grid;
   justify-content: center;
+  text-align: center;
   margin: 0 auto;
   padding: 2rem;
-}
-
-.grid-container tabla {
-  display: grid;
-  grid-template-columns: repeat(8, 2fr);
-  font-size: 20px;
-  font-style: oblique;
-  width: auto;
-}
-
-.th, td {
-  border: 1px solid black;
-  padding: 10px;
-  text-align: left;
 }
 
 .text-dir {
@@ -283,21 +290,15 @@ header {
 @media screen and (max-width: 768px) {
   .abrir-menu {
     display: block;
+    justify-items: right;
     font-size: 2rem;
     background-color: rgb(224, 162, 90);
   }
-  .nav {
+  .nav-list {
     display: none;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgb(224, 162, 90);
-    padding: 2rem;
-    box-shadow: rgb(224, 162, 90);
   }
   header {
-    background-color: brown;
+    background: linear-gradient(to right, #e06512, #d6d8d2);
   }
   .inicio1 {
     display: block;

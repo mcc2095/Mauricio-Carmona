@@ -1,0 +1,8 @@
+@keyframes saltar{
+    from{
+        transform: translate(0)
+    }
+    to{
+        transform: translateY(-5px);
+    }
+}

@@ -1,28 +1,27 @@
 @media screen and (max-width: 768px) {
     .abrir-menu{
         display: block;
+        justify-items: right;
         font-size: 2rem;
         background-color: rgb(224, 162, 90);
+        
     }
-    .nav {
+
+    .nav-list {
         display: none;
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        background-color: rgb(224, 162, 90);
-        padding: 2rem;
-        box-shadow: rgb(224, 162, 90);
     }
+   
+    
+
     header{
-        background-color: brown;
+        background: linear-gradient(to right, #e06512, #d6d8d2);
     }
     .inicio1{
         display: block;
     }
     .inicio2{
         display: block;
-       
+               
     }
     .inicio3{
         display: block;
