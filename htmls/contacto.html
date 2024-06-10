@@ -23,7 +23,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
                         </li>
@@ -50,40 +50,23 @@
     </h1>
     
     <section class="info-contacto">
-
-        <div class="phones">
-            <p>
-                Teléfonos de contacto:
-                <ul class="tel1">
-                    <li>
-                        011 - 33445566
-                    </li>
-                </ul>
-                <ul class="tel2">
-                    <li>
-                        011 - 99887766
-                    </li>
-                </ul>
-            </p>
+        <div class="contact-item">
+            <h2>Teléfonos de contacto:</h2>
+            <ul class="contact-list">
+                <li>011 - 33445566</li>
+                <li>011 - 99887766</li>
+            </ul>
         </div>
-    
-        <div class="mails">
-            <p>
-                Correos electrónicos:
-                <ul class="mail1">
-                    <li>
-                        cursodesarrolloweb@gmail.com
-                    </li>
-                </ul>
-                <ul class="mail2">
-                    <li>
-                        soporteweb@gmail.com
-                    </li>
-                </ul>
-            </p>
+        
+        <div class="contact-item">
+            <h2>Correos electrónicos:</h2>
+            <ul class="contact-list">
+                <li>cursodesarrolloweb@gmail.com</li>
+                <li>soporteweb@gmail.com</li>
+            </ul>
         </div>
-
     </section>
+    
     
 
     <div class="maps">
@@ -94,11 +77,12 @@
 
     <div class="coments">
         <form action="comentar" method="post">
-            <textarea name="comentarios" id="comentarios" cols="30" rows="10" placeholder="Déjanos tu comentario:"></textarea>
-            <input type="button" value="Enviar" class="button">
+            <label for="comentarios">Déjanos tu comentario:</label>
+            <textarea name="comentarios" id="comentarios" cols="30" rows="10" placeholder="Escribe tu comentario aquí..."></textarea>
+            <input type="submit" value="Enviar" class="button">
         </form>
-        
     </div>
+    
 
     <footer class="footer-contact">
         <div>

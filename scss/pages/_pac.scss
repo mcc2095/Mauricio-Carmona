@@ -9,7 +9,6 @@
 
 .busqueda, .barra, .boton-buscar {
     padding: 1rem;
-    
 }
 
 .boton-buscar {
@@ -20,9 +19,22 @@
     display: grid;
     justify-content: center;
     text-align: center;
-    margin: 0 auto;
     padding: 2rem;
-    
 }
 
+
+
+#carouselExampleCaptions {
+    display: flex;
+    margin: 0 auto;
+    height: 20rem;
+    width: 30rem;
+}
+
+.carousel-item{
+    img{
+        height: 300px;
+        width: 400px;
+    }
+}
 

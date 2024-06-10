@@ -126,7 +126,6 @@
   width: 20rem;
   height: 20rem;
   padding: 2rem;
-  align-items: center;
 }
 
 .texto1 {
@@ -151,7 +150,6 @@
   width: 20rem;
   height: 20rem;
   padding: 2rem;
-  align-items: center;
 }
 
 .inicio3 {
@@ -162,7 +160,6 @@
   width: 20rem;
   height: 20rem;
   padding: 2rem;
-  align-items: center;
 }
 
 .texto3 {
@@ -173,8 +170,96 @@
 }
 
 .upload {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border: 2px dashed #ccc;
+  border-radius: 10px;
+  width: 300px;
+  margin: 20px auto;
+  background-color: #f9f9f9;
+  transition: background-color 0.3s ease;
+}
+
+.upload:hover {
+  background-color: #e9e9e9;
+}
+
+.upload label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.upload label i {
+  margin-right: 10px;
+}
+
+.upload input[type=file] {
+  display: none;
+}
+
+.upload input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.upload input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.upload {
   padding: 3rem;
   text-align: center;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  border: 2px solid #ccc;
+  border-radius: 25px;
+  padding: 5px 10px;
+  width: 500px;
+  margin: 20px auto;
+  background-color: #f9f9f9;
+  transition: border-color 0.3s ease;
+}
+
+.search:hover {
+  border-color: #888;
+}
+
+.search label {
+  color: #333;
+  font-size: 24px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.search input[type=search] {
+  border: none;
+  outline: none;
+  flex-grow: 1;
+  padding: 5px;
+  font-size: 16px;
+  background-color: transparent;
+}
+
+.search input[type=search]::placeholder {
+  color: #aaa;
+}
+
+.search input[type=search]:focus::placeholder {
+  color: transparent;
 }
 
 .search {
@@ -185,6 +270,52 @@
 .download {
   padding: 3rem;
   text-align: center;
+}
+
+.download {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border: 2px dashed #ccc;
+  border-radius: 10px;
+  width: 300px;
+  margin: 20px auto;
+  background-color: #f9f9f9;
+  transition: background-color 0.3s ease;
+}
+
+.download:hover {
+  background-color: #e9e9e9;
+}
+
+.download label {
+  color: #333;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.download .download-button {
+  display: inline-flex;
+  align-items: center;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.download .download-button i {
+  margin-left: 10px;
+  font-size: 20px;
+}
+
+.download .download-button:hover {
+  background-color: #45a049;
 }
 
 .cursos {
@@ -208,66 +339,102 @@
   display: grid;
   justify-content: center;
   text-align: center;
-  margin: 0 auto;
   padding: 2rem;
+}
+
+#carouselExampleCaptions {
+  display: flex;
+  margin: 0 auto;
+  height: 20rem;
+  width: 30rem;
+}
+
+.carousel-item img {
+  height: 300px;
+  width: 400px;
 }
 
 .text-dir {
-  width: auto;
-  height: auto;
-  padding: 2rem;
-  text-align: justify;
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 800px;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  border: 1px solid #ccc;
 }
 
 .archivos {
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 800px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+.archivos ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.archivos li {
   display: flex;
-  padding: 3rem;
-  margin-top: 5rem;
-  text-align: center;
-  justify-content: center;
-  font-size: 2rem;
+  align-items: center;
+  margin: 10px 0;
 }
 
-.archivo1 {
-  padding: 3rem;
+.archivos i {
+  margin-right: 10px;
+  font-size: 20px;
+  color: #007bff;
 }
 
-.archivo2 {
-  padding: 3rem;
+.archivos a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
 }
 
-.archivo3 {
-  padding: 3rem;
+.archivos a:hover {
+  text-decoration: underline;
 }
 
 .info-contacto {
   display: flex;
-  justify-content: center;
-  padding: 2rem;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  width: 80%;
+  margin: 20px auto;
 }
 
-.phones {
-  padding: 2rem;
+.contact-item {
+  margin-bottom: 20px;
+  text-align: center;
 }
 
-.tel1 {
-  padding: 1rem;
+.contact-item h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #333;
 }
 
-.tel2 {
-  padding: 1rem;
+.contact-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
-.mails {
-  padding: 2rem;
-}
-
-.mail1 {
-  padding: 1rem;
-}
-
-.mail2 {
-  padding: 1rem;
+.contact-list li {
+  font-size: 16px;
+  margin: 5px 0;
+  color: #555;
 }
 
 .maps {
@@ -287,27 +454,81 @@
   margin-right: auto;
 }
 
+.coments {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  width: 80%;
+  margin: 20px auto;
+}
+
+.coments form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.coments label {
+  width: 100%;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #333;
+}
+
+.coments textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  resize: vertical;
+  margin-bottom: 20px;
+}
+
+.coments .button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.coments .button:hover {
+  background-color: #45a049;
+}
+
 @media screen and (max-width: 768px) {
-  .abrir-menu {
-    display: block;
-    justify-items: right;
-    font-size: 2rem;
-    background-color: rgb(224, 162, 90);
-  }
-  .nav-list {
-    display: none;
-  }
-  header {
-    background: linear-gradient(to right, #e06512, #d6d8d2);
-  }
   .inicio1 {
-    display: block;
+    display: inline-block;
+  }
+  .inicio1 .img1 {
+    display: flex;
+    margin: 0 auto;
   }
   .inicio2 {
-    display: block;
+    display: inline-block;
+  }
+  .inicio2 .img2 {
+    display: flex;
+    margin: 0 auto;
   }
   .inicio3 {
-    display: block;
+    display: inline-block;
+  }
+  .inicio3 .img3 {
+    display: flex;
+    margin: 0 auto;
+  }
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
