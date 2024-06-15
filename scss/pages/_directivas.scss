@@ -20,6 +20,8 @@
 }
 
 .archivos ul {
+    display: flex;
+    justify-content: space-around;
     list-style-type: none;
     padding: 0;
 }
@@ -33,7 +35,7 @@
 .archivos i {
     margin-right: 10px;
     font-size: 20px;
-    color: #007bff;
+    color: #0a1016;
 }
 
 .archivos a {
